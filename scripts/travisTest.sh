@@ -30,3 +30,4 @@ docker stop gettingstarted-app && docker rm gettingstarted-app
 
 # TEST 2: Building and running the application
 mvn -q clean install
+mvn liberty:create liberty:install-feature liberty:deploy liberty:test-start failsafe:integration-test liberty:test-stop
